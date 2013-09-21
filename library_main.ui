@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Library_Main</class>
+ <widget class="QMainWindow" name="Library_Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Library_Main</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>609</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_add">
+    <property name="title">
+     <string>&amp;Data</string>
+    </property>
+    <widget class="QMenu" name="menu_Add">
+     <property name="title">
+      <string>&amp;Add</string>
+     </property>
+     <addaction name="actionA_uthor"/>
+     <addaction name="action_Books"/>
+    </widget>
+    <addaction name="menu_Add"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_add"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_quit">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/exit.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionA_uthor">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/writer.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>A&amp;uthor</string>
+   </property>
+  </action>
+  <action name="action_Books">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/splash.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Books</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
